@@ -1,0 +1,86 @@
+[
+  {
+    "name": "spirit-spirit",
+    "token": "0x5cc61a78f164885776aa610fb0fe1257df78e59b",
+    "decimals": "1e18",
+    "poolId": 0,
+    "oracle": "tokens",
+    "oracleId": "SPIRIT"
+  },
+  {
+    "name": "spirit-ftm-spirit",
+    "address": "0x30748322B6E34545DBe0788C421886AEB5297789",
+    "decimals": "1e18",
+    "chainId": 250,
+    "poolId": 1,
+    "lp0": {
+      "address": "0x5cc61a78f164885776aa610fb0fe1257df78e59b",
+      "oracle": "tokens",
+      "oracleId": "SPIRIT",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
+      "oracle": "tokens",
+      "oracleId": "WFTM",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "spirit-ftm-wbtc",
+    "address": "0x279b2c897737a50405ED2091694F225D83F2D3bA",
+    "decimals": "1e18",
+    "chainId": 250,
+    "poolId": 2,
+    "lp0": {
+      "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
+      "oracle": "tokens",
+      "oracleId": "WBTC",
+      "decimals": "1e8"
+    },
+    "lp1": {
+      "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
+      "oracle": "tokens",
+      "oracleId": "WFTM",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "spirit-ftm-weth",
+    "address": "0x613BF4E46b4817015c01c6Bb31C7ae9edAadc26e",
+    "decimals": "1e18",
+    "chainId": 250,
+    "poolId": 3,
+    "lp0": {
+      "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
+      "oracle": "tokens",
+      "oracleId": "WETH",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
+      "oracle": "tokens",
+      "oracleId": "WFTM",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "spirit-ftm-usdc",
+    "address": "0xe7E90f5a767406efF87Fdad7EB07ef407922EC1D",
+    "decimals": "1e18",
+    "chainId": 250,
+    "poolId": 4,
+    "lp0": {
+      "address": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
+      "oracle": "tokens",
+      "oracleId": "USDC",
+      "decimals": "1e6"
+    },
+    "lp1": {
+      "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
+      "oracle": "tokens",
+      "oracleId": "WFTM",
+      "decimals": "1e18"
+    }
+  }
+]
