@@ -4,7 +4,9 @@ async function lpsPrices(ctx) {
   try {
     const lpTokenPrices = await getAmmLpPrices();
     ctx.status = 200;
-    ctx.body = { ...lpTokenPrices };
+    ctx.body = {
+      ...lpTokenPrices,
+    };
   } catch (err) {
     console.error(err);
     ctx.status = 500;
@@ -14,8 +16,13 @@ async function lpsPrices(ctx) {
 async function tokenPrices(ctx) {
   try {
     const prices = await getAmmTokensPrices();
+    const lpTokenPrices = await getAmmLpPrices();
+
     ctx.status = 200;
-    ctx.body = prices;
+    ctx.body = {
+      ...lpTokenPrices,
+      ...prices,
+    };
   } catch (err) {
     ctx.throw(500, err);
   }
