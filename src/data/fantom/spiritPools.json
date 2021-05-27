@@ -82,5 +82,62 @@
       "oracleId": "WFTM",
       "decimals": "1e18"
     }
+  },
+  {
+    "name": "spirit-ftm-bnb",
+    "address": "0x74fE5Ddc4c27F91a1898ccd5Ac62dFeb2d3dF726",
+    "decimals": "1e18",
+    "chainId": 250,
+    "poolId": 21,
+    "lp0": {
+      "address": "0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454",
+      "oracle": "tokens",
+      "oracleId": "BNB",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
+      "oracle": "tokens",
+      "oracleId": "WFTM",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "spirit-ftm-zoo",
+    "address": "0xDF18DD2631f02D930071DF7d6FF89bbc3718C62F",
+    "decimals": "1e18",
+    "chainId": 250,
+    "poolId": 6,
+    "lp0": {
+      "address": "0x09e145a1d53c0045f41aeef25d8ff982ae74dd56",
+      "oracle": "tokens",
+      "oracleId": "ZOO",
+      "decimals": "1"
+    },
+    "lp1": {
+      "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
+      "oracle": "tokens",
+      "oracleId": "WFTM",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "spirit-ftm-sushi",
+    "address": "0x9Fe4c0CE5F533e96C2b72d852f190961AD5a7bB3",
+    "decimals": "1e18",
+    "chainId": 250,
+    "poolId": 8,
+    "lp0": {
+      "address": "0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC",
+      "oracle": "tokens",
+      "oracleId": "SUSHI",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
+      "oracle": "tokens",
+      "oracleId": "WFTM",
+      "decimals": "1e18"
+    }
   }
 ]
