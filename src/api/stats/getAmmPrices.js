@@ -169,6 +169,7 @@ const knownPrices = {
   BUSD: 1,
   USDT: 1,
   HUSD: 1,
+  FUSDT: 1,
   DAI: 1,
   USDC: 1,
   UST: 1,

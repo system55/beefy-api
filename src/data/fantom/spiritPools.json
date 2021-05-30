@@ -139,5 +139,24 @@
       "oracleId": "WFTM",
       "decimals": "1e18"
     }
+  },
+  {
+    "name": "spirit-busd-fusdt",
+    "address": "0x1Ac51904cFAaD15679B3500F0fC41D2971657f80",
+    "decimals": "1e18",
+    "chainId": 250,
+    "poolId": 27,
+    "lp0": {
+      "address": "0xc931f61b1534eb21d8c11b24f3f5ab2471d4ab50",
+      "oracle": "tokens",
+      "oracleId": "BUSD",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x049d68029688eabf473097a2fc38ef61633a3c7a",
+      "oracle": "tokens",
+      "oracleId": "FUSDT",
+      "decimals": "1e6"
+    }
   }
 ]

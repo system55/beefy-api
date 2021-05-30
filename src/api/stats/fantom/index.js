@@ -26,7 +26,7 @@ const getFantomApys = async () => {
     try {
       const apy = await getApy();
       apys = { ...apys, ...apy };
-      console.log('----apys-----', apys);
+      // console.log('----apys-----', apys);
     } catch (e) {
       console.error('FantomApy error', getApy.name, e);
     }
