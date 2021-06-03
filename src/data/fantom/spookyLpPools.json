@@ -138,6 +138,7 @@
     "decimals": "1e18",
     "poolId": 4,
     "chainId": 250,
+    "strategy": "0x0d067b8891Da97E6260C77E51f16040aca69509C",
     "lp0": {
       "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
       "oracle": "tokens",
@@ -167,25 +168,6 @@
       "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
       "oracle": "tokens",
       "oracleId": "WFTM",
-      "decimals": "1e18"
-    }
-  },
-  {
-    "name": "boo-dai-ftm",
-    "address": "0xe120ffBDA0d14f3Bb6d6053E90E63c572A66a428",
-    "decimals": "1e18",
-    "poolId": 3,
-    "chainId": 250,
-    "lp0": {
-      "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
-      "oracle": "tokens",
-      "oracleId": "WFTM",
-      "decimals": "1e18"
-    },
-    "lp1": {
-      "address": "0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e",
-      "oracle": "tokens",
-      "oracleId": "DAI",
       "decimals": "1e18"
     }
   },
@@ -233,6 +215,7 @@
     "decimals": "1e18",
     "poolId": 5,
     "chainId": 250,
+    "strategy": "0xd21308d247aA9ea6798a53Fbd01a894b99077845",
     "lp0": {
       "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
       "oracle": "tokens",
@@ -252,6 +235,7 @@
     "decimals": "1e18",
     "poolId": 0,
     "chainId": 250,
+    "strategy": "0x8c984DE219f28Cf0f84C411Fe27ab406162eB51E",
     "lp0": {
       "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
       "oracle": "tokens",
@@ -271,6 +255,7 @@
     "decimals": "1e18",
     "poolId": 2,
     "chainId": 250,
+    "strategy": "0x89DeFdC85A322F15a5e121d0B27b80fdC94eea44",
     "lp0": {
       "address": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
       "oracle": "tokens",
@@ -290,6 +275,7 @@
     "decimals": "1e18",
     "poolId": 3,
     "chainId": 250,
+    "strategy": "0xc5e4c5aBc051d196c930378BA45F482655CDB50a",
     "lp0": {
       "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
       "oracle": "tokens",
@@ -301,6 +287,26 @@
       "oracle": "tokens",
       "oracleId": "DAI",
       "decimals": "1e18"
+    }
+  },
+  {
+    "name": "boo-busd-fusdt",
+    "address": "0x1Ac51904cFAaD15679B3500F0fC41D2971657f80",
+    "decimals": "1e18",
+    "poolId": 15,
+    "chainId": 250,
+    "strategy": "0x7EbdEB7107B14322D4AFc1CB855e9ED716F9d7D2",
+    "lp0": {
+      "address": "0xc931f61b1534eb21d8c11b24f3f5ab2471d4ab50",
+      "oracle": "tokens",
+      "oracleId": "BUSD",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x049d68029688eabf473097a2fc38ef61633a3c7a",
+      "oracle": "tokens",
+      "oracleId": "fUSDT",
+      "decimals": "1e6"
     }
   }
 ]

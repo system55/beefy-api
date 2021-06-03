@@ -12,6 +12,7 @@ const boo = '0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE';
 const oracleId = 'BOO';
 const oracle = 'tokens';
 const DECIMALS = '1e18';
+const boo_strategy = '0xe07363E28A4068Bd46E4cd4de3faf36220Bb23FA';
 
 const getSpookyBooTvl = async () => {
   const [totalStakedInUsd] = await Promise.all([getTotalStakedInUsd()]);
@@ -20,9 +21,10 @@ const getSpookyBooTvl = async () => {
 
 const getTotalStakedInUsd = async () => {
   const web3 = web3Factory(250);
-
-  const tokenContract = new web3.eth.Contract(ERC20, boo);
-  const totalStaked = new BigNumber(await tokenContract.methods.balanceOf(masterchef).call());
+  const masterchefContract = new web3.eth.Contract(MasterChef, masterchef);
+  let { amount } = await masterchefContract.methods.userInfo(5, boo_strategy).call();
+  // const tokenContract = new web3.eth.Contract(ERC20, boo);
+  const totalStaked = new BigNumber(amount);
   const tokenPrice = await fetchPrice({ oracle, id: oracleId });
   const totalStakedInUsd = totalStaked.times(tokenPrice).dividedBy('1e18');
   return totalStakedInUsd;

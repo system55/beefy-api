@@ -36,9 +36,9 @@ const getPoolApy = async (masterchef, pool) => {
 
 const getTotalLpStakedInUsd = async (targetAddr, pool) => {
   const web3 = web3Factory(250);
-
-  const tokenPairContract = new web3.eth.Contract(ERC20, pool.address);
-  const totalStaked = new BigNumber(await tokenPairContract.methods.balanceOf(targetAddr).call());
+  const masterchefContract = new web3.eth.Contract(MasterChef, masterchef);
+  let { amount } = await masterchefContract.methods.userInfo(pool.poolId, pool.strategy).call();
+  const totalStaked = new BigNumber(amount);
   const tokenPrice = await lpTokenPrice(pool);
   const totalStakedInUsd = totalStaked.times(tokenPrice).dividedBy('1e18');
   return totalStakedInUsd;
