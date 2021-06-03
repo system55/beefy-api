@@ -22,7 +22,7 @@ const getSpookyBooTvl = async () => {
 const getTotalStakedInUsd = async () => {
   const web3 = web3Factory(250);
   const masterchefContract = new web3.eth.Contract(MasterChef, masterchef);
-  let { amount } = await masterchefContract.methods.userInfo(5, boo_strategy).call();
+  let { amount } = await masterchefContract.methods.userInfo(0, boo_strategy).call();
   // const tokenContract = new web3.eth.Contract(ERC20, boo);
   const totalStaked = new BigNumber(amount);
   const tokenPrice = await fetchPrice({ oracle, id: oracleId });

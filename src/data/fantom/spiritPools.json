@@ -119,7 +119,7 @@
       "address": "0x09e145a1d53c0045f41aeef25d8ff982ae74dd56",
       "oracle": "tokens",
       "oracleId": "ZOO",
-      "decimals": "1"
+      "decimals": "1e18"
     },
     "lp1": {
       "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",

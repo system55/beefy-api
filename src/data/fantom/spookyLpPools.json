@@ -288,25 +288,5 @@
       "oracleId": "DAI",
       "decimals": "1e18"
     }
-  },
-  {
-    "name": "boo-busd-fusdt",
-    "address": "0x1Ac51904cFAaD15679B3500F0fC41D2971657f80",
-    "decimals": "1e18",
-    "poolId": 15,
-    "chainId": 250,
-    "strategy": "0x7EbdEB7107B14322D4AFc1CB855e9ED716F9d7D2",
-    "lp0": {
-      "address": "0xc931f61b1534eb21d8c11b24f3f5ab2471d4ab50",
-      "oracle": "tokens",
-      "oracleId": "BUSD",
-      "decimals": "1e18"
-    },
-    "lp1": {
-      "address": "0x049d68029688eabf473097a2fc38ef61633a3c7a",
-      "oracle": "tokens",
-      "oracleId": "fUSDT",
-      "decimals": "1e6"
-    }
   }
 ]
