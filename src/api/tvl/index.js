@@ -7,14 +7,14 @@ const TIMEOUT = 5 * 60 * 1000;
 async function tvl(ctx) {
   try {
     ctx.request.socket.setTimeout(TIMEOUT);
-    let apys = await getTvls();
+    let tvls = await getTvls();
 
-    if (Object.keys(apys).length === 0) {
-      throw 'There is no APYs data yet';
+    if (Object.keys(tvls).length === 0) {
+      throw 'There is no TVLs data yet';
     }
 
     ctx.status = 200;
-    ctx.body = apys;
+    ctx.body = tvls;
   } catch (err) {
     ctx.throw(500, err);
   }

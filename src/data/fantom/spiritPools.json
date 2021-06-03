@@ -4,6 +4,7 @@
     "token": "0x5cc61a78f164885776aa610fb0fe1257df78e59b",
     "decimals": "1e18",
     "poolId": 0,
+    "strategy": "0xfEe2FeB62D879f90fa1a235848E2C304F124C7C2",
     "oracle": "tokens",
     "oracleId": "SPIRIT"
   },
@@ -13,6 +14,7 @@
     "decimals": "1e18",
     "chainId": 250,
     "poolId": 1,
+    "strategy": "0xE397773980b8F90B4D7902b9dC7017E2869Dc59a",
     "lp0": {
       "address": "0x5cc61a78f164885776aa610fb0fe1257df78e59b",
       "oracle": "tokens",
@@ -32,6 +34,7 @@
     "decimals": "1e18",
     "chainId": 250,
     "poolId": 2,
+    "strategy": "0x3eA14059b6Bf9bed6B3043FB04C4a9e8Abd39B48",
     "lp0": {
       "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
       "oracle": "tokens",
@@ -51,6 +54,7 @@
     "decimals": "1e18",
     "chainId": 250,
     "poolId": 3,
+    "strategy": "0x2322f85dd0Af3Db5Cb95E3ED4E75a5ed68A8A7Fd",
     "lp0": {
       "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
       "oracle": "tokens",
@@ -70,6 +74,7 @@
     "decimals": "1e18",
     "chainId": 250,
     "poolId": 4,
+    "strategy": "0xAE9391846CECF939c5F580c766430B63ceE88443",
     "lp0": {
       "address": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
       "oracle": "tokens",
@@ -89,6 +94,7 @@
     "decimals": "1e18",
     "chainId": 250,
     "poolId": 21,
+    "strategy": "0x6A51B21268DaFF0d54182057568B66491E99eDaf",
     "lp0": {
       "address": "0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454",
       "oracle": "tokens",
@@ -108,6 +114,7 @@
     "decimals": "1e18",
     "chainId": 250,
     "poolId": 6,
+    "strategy": "0x067D51c7E39F861f9412056E2567dc33D066cA76",
     "lp0": {
       "address": "0x09e145a1d53c0045f41aeef25d8ff982ae74dd56",
       "oracle": "tokens",
@@ -127,6 +134,7 @@
     "decimals": "1e18",
     "chainId": 250,
     "poolId": 8,
+    "strategy": "0x71360a0Ffad8E0FA0c2CE8A2C81c145c3bD9932e",
     "lp0": {
       "address": "0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC",
       "oracle": "tokens",
@@ -146,6 +154,7 @@
     "decimals": "1e18",
     "chainId": 250,
     "poolId": 27,
+    "strategy": "0x7EbdEB7107B14322D4AFc1CB855e9ED716F9d7D2",
     "lp0": {
       "address": "0xc931f61b1534eb21d8c11b24f3f5ab2471d4ab50",
       "oracle": "tokens",
