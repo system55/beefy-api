@@ -184,19 +184,19 @@ const updateAmmPrices = async () => {
   isProcessing = true;
   try {
     let { poolPrices, tokenPrices } = await fetchAmmPrices(pools, knownPrices);
-    const beltLPs = await getBeltPrices(tokenPrices);
-    const ellipsisLPs = await getEllipsisPrices();
-    const snob3PoolLP = await getSnob3PoolPrice();
-    const froyoLPs = await getFroyoPrices();
-    const gondolaLPs = await getGondolaPrices(tokenPrices);
+    // const beltLPs = await getBeltPrices(tokenPrices);
+    // const ellipsisLPs = await getEllipsisPrices();
+    // const snob3PoolLP = await getSnob3PoolPrice();
+    // const froyoLPs = await getFroyoPrices();
+    // const gondolaLPs = await getGondolaPrices(tokenPrices);
     tokenPricesCache = tokenPrices;
     lpPricesCache = {
       ...poolPrices,
-      ...beltLPs,
-      ...ellipsisLPs,
-      ...snob3PoolLP,
-      ...froyoLPs,
-      ...gondolaLPs,
+      // ...beltLPs,
+      // ...ellipsisLPs,
+      // ...snob3PoolLP,
+      // ...froyoLPs,
+      // ...gondolaLPs,
     };
   } catch (err) {
     console.error(err);

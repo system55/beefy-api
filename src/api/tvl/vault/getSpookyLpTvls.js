@@ -15,23 +15,23 @@ const oracle = 'tokens';
 const DECIMALS = '1e18';
 
 const getSpookyLpTvls = async () => {
-  let apys = {};
+  let tvls = {};
 
   for (const pool of pools) {
     try {
-      const apy = await getPoolApy(masterchef, pool);
-      apys = { ...apys, ...apy };
+      const tvl = await getPoolApy(masterchef, pool);
+      tvls = { ...tvls, ...tvl };
     } catch (e) {
-      console.error('getSpookyLpApys error', e);
+      console.error('getSpookyLpTvls error', e);
     }
   }
 
-  return apys;
+  return tvls;
 };
 
 const getPoolApy = async (masterchef, pool) => {
   const [totalStakedInUsd] = await Promise.all([getTotalLpStakedInUsd(masterchef, pool)]);
-  return { [pool.name]: totalStakedInUsd };
+  return { [pool.name]: totalStakedInUsd * 1 };
 };
 
 const getTotalLpStakedInUsd = async (targetAddr, pool) => {

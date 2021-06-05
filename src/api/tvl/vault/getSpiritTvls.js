@@ -19,16 +19,16 @@ const CHAIN_ID = 250;
 const secondsPerYear = 31536000;
 
 const getSpiritPoolTvls = async () => {
-  let apys = {};
+  let tvls = {};
 
   let promises = [];
   pools.forEach(pool => promises.push(getPoolTvl(masterchef, pool)));
   const values = await Promise.all(promises);
   for (item of values) {
-    apys = { ...apys, ...item };
+    tvls = { ...tvls, ...item };
   }
 
-  return apys;
+  return tvls;
 };
 
 const getPoolTvl = async (masterchef, pool) => {
@@ -45,7 +45,7 @@ const getPoolTvl = async (masterchef, pool) => {
   }
   const [totalStakedInUsd] = await Promise.all([getTotalStaked]);
 
-  return { [pool.name]: totalStakedInUsd };
+  return { [pool.name]: totalStakedInUsd * 1 };
 };
 
 module.exports = getSpiritPoolTvls;

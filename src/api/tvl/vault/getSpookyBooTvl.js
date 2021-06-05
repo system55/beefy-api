@@ -16,7 +16,7 @@ const boo_strategy = '0xe07363E28A4068Bd46E4cd4de3faf36220Bb23FA';
 
 const getSpookyBooTvl = async () => {
   const [totalStakedInUsd] = await Promise.all([getTotalStakedInUsd()]);
-  return { 'boo-boo': totalStakedInUsd };
+  return { 'boo-boo': totalStakedInUsd * 1 };
 };
 
 const getTotalStakedInUsd = async () => {
