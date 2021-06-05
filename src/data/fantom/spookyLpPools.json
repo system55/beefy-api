@@ -337,7 +337,7 @@
     "name": "boo-ftm-sushi",
     "address": "0xf84E313B36E86315af7a06ff26C8b20e9EB443C3",
     "decimals": "1e18",
-    "poolId": 18,
+    "poolId": 10,
     "chainId": 250,
     "strategy": "0x4f50B70E800CB35C612Ad3da0ac6AC078072Fc7d",
     "lp0": {
