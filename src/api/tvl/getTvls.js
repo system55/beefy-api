@@ -1,7 +1,7 @@
 const { getEsterTvls } = require('./vault');
 
 const INIT_DELAY = 30 * 1000;
-const REFRESH_INTERVAL = 15 * 60 * 1000;
+const REFRESH_INTERVAL = 5 * 60 * 1000;
 
 let apys = {};
 
