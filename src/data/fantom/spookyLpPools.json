@@ -5,6 +5,7 @@
     "decimals": "1e18",
     "poolId": 20,
     "chainId": 250,
+    "strategy": "0x07130E950499c4273924d9A01e329bB140De26C6",
     "lp0": {
       "address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
       "oracle": "tokens",
